@@ -1,0 +1,54 @@
+body {
+    height: 100vh;
+    width: 100%;
+    background: #C6C8E4;
+    position: relative;
+}
+
+.player {
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  
+  height: 50px;
+  width: 50px;
+  background: url(player.png);
+}
+.obstacle {
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+  
+  height: 50px;
+  width: 50px;
+  background-color: mediumpurple;
+  
+  animation: ao 3s linear infinite;
+}
+
+.ap{
+  animation-name: ap;
+  animation-timing-function: linear;
+  animation-duration: 1s;
+}
+
+@keyframes ap{
+  0%{
+    bottom: 0;
+  }
+  50%{
+    bottom: 50vh;
+  }
+  100%{
+    bottom: 0;
+  }
+}
+
+@keyframes ao{
+  0%{
+    right: 0;
+  }
+  100%{
+    right: 100vw;
+  }
+}
