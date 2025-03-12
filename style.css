@@ -4,24 +4,25 @@ body {
     background: #C6C8E4;
     position: relative;
 }
-
+img{
+  width: 100%;
+}
 .player {
   position: absolute;
-  bottom: 0;
+  bottom: 00;
   left: 20px;
   
-  height: 50px;
-  width: 50px;
-  background: url(player.png);
+  height: 100px;
+  width: 100px;
+  /* background-image: url("./player.png"); */
 }
 .obstacle {
   position: absolute;
   bottom: 0;
   right: 20px;
   
-  height: 50px;
-  width: 50px;
-  background-color: mediumpurple;
+  height: 100px;
+  width: 100px;
   
   animation: ao 3s linear infinite;
 }
@@ -37,7 +38,7 @@ body {
     bottom: 0;
   }
   50%{
-    bottom: 50vh;
+    bottom: 70vh;
   }
   100%{
     bottom: 0;
@@ -52,3 +53,4 @@ body {
     right: 100vw;
   }
 }
+
